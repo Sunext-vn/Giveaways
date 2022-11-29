@@ -1,0 +1,77 @@
+# If you have any question
+# Please contact @adselvn on Fiverr
+# or
+# Email: duykhang.sunext@gmail.com
+# Discord: Duy Khang#1828
+# Github: https://github.com/HiImSunny
+
+prefix: "&cGiveaway &6>&r"
+
+time: # Only accept seconds, minute, hour and day (s, m, h, d)
+  set-time-manually:
+    enabled: true # If true, player can choose how long the giveaways will end
+    min: "5m"
+    max: "7d"
+  default-time: "15m" # If "set-time-manually" is false, all the giveaways will be ended in 15m
+
+messages:
+  please-set-time: "{PREFIX} &aPlease set the time for the giveaways (Type in chat, e.g: 15m)"
+  wrong-time-format: "{PREFIX} &aYou type wrong time format, e.g: 1h, 1m, etc. &7/ &cType 'cancel' to cancel!"
+  time-incorrect-specifications: "{PREFIX} &aGiveaway time must be between {MIN} and {MAX}!"
+  giveaways-is-running: "{PREFIX} &aYour giveaways is running, you can't create another!"
+  create-giveaways-complete: "{PREFIX} &aYour giveaways has been created!"
+  entered-giveaways: "{PREFIX} &aYou just entered the giveaways of &e{PLAYER_NAME}"
+  has-entered-giveaways: "{PREFIX} &cYou has entered the giveaways of &e{PLAYER_NAME}"
+  cannot-join-own-giveaways: "{PREFIX} &cYou cannot join your own giveaways!"
+  giveaways-has-ended: "{PREFIX} &aThat giveaways is ended, you can't join it anymore!"
+  giveaways-not-exists: "{PREFIX} &cGiveaways name you just typed is not exists!"
+  give-winner-giveaways: "{PREFIX} &aHere are your items for the winner of the giveaways of {PLAYER_NAME}"
+  give-own-giveaways: "{PREFIX} &aThere are no one join your giveaways so you get your items back!"
+  countdown-giveaways: "{PREFIX} &e{PLAYER_NAME}'s giveaways will end up in {COUNTDOWN}"
+  fail-set-time: "{PREFIX} &aYou wasn't set the time, giveaways has been cancelled!"
+  fail-to-create-giveaways: "{PREFIX} &aThere are no items in GUI, giveaways has been cancelled!"
+  announce-giveaways: "{PREFIX} &e{PLAYER_NAME} just created a giveaways, &a&lJOIN NOW! &7(/giveaways {PLAYER_NAME})"
+  announce-winner-giveaways: "{PREFIX} &a{WINNER} is the winner of the giveaways of {PLAYER_NAME}"
+  announce-end-giveaways: "{PREFIX} &aGiveaways of {PLAYER_NAME} is ended, but there are no one join the giveaways!"
+  announce-entered-giveaways: "{PREFIX} &a{JOIN_PLAYER} just entered the giveaways of {PLAYER_NAME}, &a&lJOIN NOW! &7(/giveaways {PLAYER_NAME})"
+
+gui:
+  creator:
+    name: "&cGiveaways creator"
+    items:
+      instructions:
+        material: "BOOK"
+        glow: true
+        name: "&cHow to create Giveaways"
+        lore:
+          - ""
+          - " &7Put items to those slots above black glass line."
+          - " &7It need minimum &e1 item &7to create the giveaways."
+          - " &c&oIf there are no items when close,"
+          - " &c&othe giveaways will be cancel."
+          - ""
+          - " &aClose the gui to complete giveaways creation."
+      background:
+        material: "BLACK_STAINED_GLASS_PANE"
+        glow: false
+        name: ""
+        lore: []
+  join:
+    name: "&cJoin &e{PLAYER_NAME} &cgiveaways"
+    items:
+        instructions:
+          material: "BOOK"
+          glow: true
+          name: "&cHow to join the Giveaways"
+          lore:
+            - ""
+            - " &aSimply press this book to entering."
+        next-page:
+          material: "BLACK_STAINED_GLASS_PANE"
+          glow: false
+          name: "&cNext page"
+          lore:
+            - ""
+            - " &7Showing next page if there are any remaining."
+            - ""
+            - "&aClick to showing the next page."

@@ -1,0 +1,12 @@
+name: Giveaways
+version: '${project.version}'
+main: vn.sunext.adselvn.giveaways.Giveaways
+api-version: 1.13
+authors: [ sunext_team, adselvn ]
+website: https://github.com/Sunext-vn
+
+commands:
+  giveaways:
+    aliases:
+      - ga
+      - gaway
